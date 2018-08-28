@@ -3,6 +3,7 @@ import { Provider } from 'react-redux'
 import { Switch, Route, BrowserRouter } from 'react-router-dom'
 import Home from 'pages/home'
 import Landing from 'pages/landing'
+import Blog from 'pages/blog'
 import Login from 'pages/login'
 import NoPage from 'pages/nopage'
 import store from 'store'
@@ -16,6 +17,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/landing" component={Landing} />
+          <Route exact path="/blog" component={Blog} />
           <Route exact path="/login" component={Login} />
           <Route path="*" component={NoPage} />
         </Switch>
